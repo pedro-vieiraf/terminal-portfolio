@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import Header from '../components/Header';
 
 export const metadata = {
-  title: 'Meu Portfólio',
+  title: '>_ pedro',
   description: 'Backend Developer Portfolio',
 };
 
