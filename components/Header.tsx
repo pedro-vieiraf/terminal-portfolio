@@ -11,7 +11,7 @@ export default function Header() {
         <Link href="#projects" className="h-fit hover:underline hover:underline-offset-2">
           /projects
         </Link>
-        <Link href="#contact" className="h-fit hover:underline hover:underline-offset-2">
+        <Link href="/contact" className="h-fit hover:underline hover:underline-offset-2">
           /contact
         </Link>
       </nav>
