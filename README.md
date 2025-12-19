@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Backend Developer Portfolio
 
-## Getting Started
+Welcome to my terminal/chat-themed portfolio.
 
-First, run the development server:
+This project presents my work through a terminal-style chat interface, mixing a clean, minimal frontend with subtle pixel-art elements. The goal is to create an experience that feels personal, lightweight, and slightly playful — while still remaining professional.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧠 Concept
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The “chat” interface is designed to simulate a conversation I might have with a visitor, guiding them through my work as if I were personally presenting it — in a light and approachable way.
 
-## Learn More
+Because I focus primarily on backend development, the frontend intentionally keeps things simple. The minimal UI, terminal aesthetics, and restrained CSS choices reflect how I think about software: clear, functional, and purpose-driven.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Purpose
 
-## Deploy on Vercel
+This portfolio is not meant to be flashy or complex.  
+It’s meant to feel **honest**, **personal**, and **approachable** — a layout that aligns with how I think about software: clarity first, structure over decoration, and purpose-driven design.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🛠️ Tech Stack
+
+- **Next.js (App Router)**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **SVG Pixel Art**
+
+This is a **frontend-only project**.  
+There is no backend or AI involved — the chat experience is intentionally simulated to tell a story and guide the visitor.
+
+
+
+## 🎨 Design Notes
+
+- Terminal-inspired layout
+- Monospace typography
+- Dark theme with high contrast
+- Pixel-art SVG icons for a subtle retro touch
+- Responsive and accessible by default
+
+
+
+## 📬 Contact
+
+Feel free to explore the project and reach out if you’d like to collaborate or chat about backend systems, APIs, or software architecture.
