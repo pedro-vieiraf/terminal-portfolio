@@ -8,7 +8,7 @@ export default function Header() {
         <Link href="/skills" className="h-fit hover:underline hover:underline-offset-2">
           /skills
         </Link>
-        <Link href="#projects" className="h-fit hover:underline hover:underline-offset-2">
+        <Link href="/projects" className="h-fit hover:underline hover:underline-offset-2">
           /projects
         </Link>
         <Link href="/contact" className="h-fit hover:underline hover:underline-offset-2">
