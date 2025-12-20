@@ -44,6 +44,20 @@ There is no backend or AI involved — the chat experience is intentionally simu
 
 
 
+## 🧩 Planned Improvements
+
+This project is intentionally kept simple, but there are a few improvements planned to refine the experience over time:
+
+- **Light mode support**  
+  Optional light theme while preserving the terminal aesthetic and contrast.
+
+- **Multi-language support**  
+  Support for multiple languages in the terminal interface, making the experience accessible to a broader audience.
+
+These enhancements are planned to evolve the project gradually, while keeping its original philosophy: clarity, minimalism, and purpose-driven design.
+
+
+
 ## 📬 Contact
 
 Feel free to explore the project and reach out if you’d like to collaborate or chat about backend systems, APIs, or software architecture.
