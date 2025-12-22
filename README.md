@@ -48,9 +48,6 @@ There is no backend or AI involved — the chat experience is intentionally simu
 
 This project is intentionally kept simple, but there are a few improvements planned to refine the experience over time:
 
-- **Light mode support**  
-  Optional light theme while preserving the terminal aesthetic and contrast.
-
 - **Multi-language support**  
   Support for multiple languages in the terminal interface, making the experience accessible to a broader audience.
 
