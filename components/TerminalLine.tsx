@@ -7,6 +7,8 @@ export default function TerminalLine({ prefix, text }: TerminalLineProps) {
   const isSystem = prefix === 'system';
   const isMultiline = text.includes('\n');
 
+  const textColor = isSystem ? 'text-secondary' : 'text-foreground';
+
   return (
     <div className="flex gap-2">
       <span className="text-primary shrink-0">
@@ -16,9 +18,9 @@ export default function TerminalLine({ prefix, text }: TerminalLineProps) {
       {isMultiline ? (
         <pre
           className={`
+            ${textColor}
             whitespace-pre
             overflow-x-auto
-            ${isSystem ? 'text-secondary' : 'text-white'}
           `}
         >
           {text}
@@ -26,7 +28,7 @@ export default function TerminalLine({ prefix, text }: TerminalLineProps) {
       ) : (
         <span
           className={`
-            ${isSystem ? 'text-secondary' : 'text-white'}
+            ${textColor}
             whitespace-normal md:whitespace-pre
             wrap-break-words
           `}

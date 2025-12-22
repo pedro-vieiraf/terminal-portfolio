@@ -1,46 +1,101 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ========================
+   1. TOKENS SEMÂNTICOS
+   Default = DARK (terminal)
+   ======================== */
+
+html {
+  --bg: #000000;
+  --fg: #ededed;
+
+  --primary: #a40029;
+  --secondary: #fd8515;
+
+  --muted: rgba(255, 255, 255, 0.4);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-strong: color-mix(in srgb, var(--fg) 40%);
 }
 
-@theme {
-  --color-background: #000000;   /* fundo preto */
-  --color-foreground: #ededed;   /* texto padrão */
-  --color-primary: #a40029;      /* prefixos (vermelho) */
-  --color-secondary: #ff9f43;    /* texto do terminal (laranja) */
+html .project-image {
+  content: url("/icons/projects/terminal.svg");
 }
 
 /* ========================
-   Classes utilitárias
+   2. CATPPUCCIN LATTE
    ======================== */
-.text-primary { color: theme('color.primary'); }
-.text-secondary { color: theme('color.secondary'); }
-.bg-terminal { background-color: theme('color.background'); }
-.text-foreground { color: theme('color.foreground'); }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html.theme-latte {
+  --bg: #eff1f5;
+  --fg: #4c4f69;
+
+  --primary: #ff8db0;
+  --secondary: #7287fd;
+
+  --muted: #5c5f77;
+  --border: #dce0e8;
+  --border-strong: color-mix(in srgb, var(--fg) 40%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #ededed;
-  }
+html.theme-latte .project-image {
+  content: url("/icons/projects/terminal-black.svg");
 }
+
+/* ========================
+   3. TAILWIND THEME BRIDGE
+   ======================== */
+
+@theme {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+}
+
+/* ========================
+   4. UTILITÁRIOS
+   ======================== */
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.text-foreground {
+  color: var(--fg);
+}
+
+.bg-terminal {
+  background-color: var(--bg);
+}
+
+.border-strong {
+  border-color: var(--border-strong);
+}
+
+/* ========================
+   5. BASE STYLES
+   ======================== */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--bg);
+  color: var(--fg);
   font-size: 16px;
   font-family: monospace;
 }
 
-header {
+header,
+footer {
   font-family: monospace;
 }

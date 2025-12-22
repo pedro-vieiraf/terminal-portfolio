@@ -7,12 +7,10 @@ import { projects } from "../data/projects";
 export default function ProjectsPage() {
   return (
     <TerminalLayout>
-      {/* Chat */}
       {projectsLines.map((line, index) => (
         <TerminalLine key={index} prefix={line.prefix} text={line.text} />
       ))}
 
-      {/* Grid de projetos */}
       <div className="grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-6 mt-6">
         {projects.map((proj) => (
           <a
@@ -20,19 +18,43 @@ export default function ProjectsPage() {
             href={proj.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center p-4 border border-white rounded-md hover:bg-gray-800 transition"
+            className="
+              flex flex-col items-center p-4
+              rounded-md
+              border
+              bg-terminal
+              hover:bg-(--muted)
+            "
+            style={{
+              borderColor: "var(--fg)",
+            }}
           >
-            {/* Aqui vai a imagem do projeto */}
-            <div className="w-full h-32 bg-gray-900 flex items-center justify-center">
+            <div
+              className="
+                w-full h-32
+                flex items-center justify-center
+                rounded
+              "
+              style={{
+                backgroundColor: "var(--bg)",
+              }}
+            >
               <Image
-                src={proj.image} // use o SVG ou PNG que você criar
+                src={proj.image}
                 alt={proj.name}
                 width={64}
                 height={64}
+                className="project-image"
               />
             </div>
-            <h3 className="mt-2 font-bold">{proj.name}</h3>
-            <p className="text-xs text-gray-400 mt-1 text-center">{proj.technologies.join(", ")}</p>
+
+            <h3 className="mt-2 font-bold text-foreground">
+              {proj.name}
+            </h3>
+
+            <p className="text-xs text-muted mt-1 text-center">
+              {proj.technologies.join(", ")}
+            </p>
           </a>
         ))}
       </div>
