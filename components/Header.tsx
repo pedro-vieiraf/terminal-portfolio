@@ -11,14 +11,14 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="w-full flex justify-between items-center py-4 px-6 bg-terminal text-foreground">
-      <div className="flex items-center gap-6">
+    <header className="w-full flex justify-between items-center py-4 sm:px-6 bg-terminal text-foreground">
+      <div className="flex items-center gap-3 sm:gap-6">
         <Link href="/" className="text-xl font-bold text-primary">
           <span className="hidden md:inline">{'>_ pedro'}</span>
           <span className="md:hidden">{'>_'}</span>
         </Link>
 
-        <nav className="flex gap-4 md:gap-6 text-sm md:text-base">
+        <nav className="flex flex-wrap gap-x-3 gap-y-2 sm:gap-x-4 md:gap-x-6 text-sm md:text-base">
           <Link href="/skills" className="hover:underline hover:underline-offset-2">
             /skills
           </Link>
@@ -33,7 +33,7 @@ export default function Header() {
 
       <button
         onClick={toggleTheme}
-        className="p-1 cursor-pointer"
+        className="shrink-0 p-2 cursor-pointer"
         aria-label="Toggle theme"
       >
         <Image

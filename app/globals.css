@@ -9,10 +9,10 @@ html {
   --bg: #000000;
   --fg: #ededed;
 
-  --primary: #a40029;
+  --primary: #f05b77;
   --secondary: #fd8515;
 
-  --muted: rgba(255, 255, 255, 0.4);
+  --muted: #a1a1aa;
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: color-mix(in srgb, var(--fg) 40%);
 }
@@ -29,8 +29,8 @@ html.theme-latte {
   --bg: #eff1f5;
   --fg: #4c4f69;
 
-  --primary: #ff8db0;
-  --secondary: #7287fd;
+  --primary: #9c3159;
+  --secondary: #4057b5;
 
   --muted: #5c5f77;
   --border: #dce0e8;
@@ -54,6 +54,7 @@ html.theme-latte .project-image {
 
   --color-muted: var(--muted);
   --color-border: var(--border);
+  --color-surface-hover: color-mix(in srgb, var(--fg) 8%, var(--bg));
 }
 
 /* ========================

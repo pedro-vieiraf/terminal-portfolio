@@ -29,7 +29,7 @@ export default function TerminalLine({ prefix, text }: TerminalLineProps) {
         <span
           className={`
             ${textColor}
-            whitespace-normal md:whitespace-pre
+            min-w-0 whitespace-normal
             wrap-break-words
           `}
         >

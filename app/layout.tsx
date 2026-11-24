@@ -6,7 +6,7 @@ import { ThemeProvider } from './context/ThemeContext';
 
 export const metadata = {
   title: '>_ pedro',
-  description: 'Backend Developer Portfolio',
+  description: 'Pedro Vieira’s Java backend portfolio. Explore projects built with Java, Spring Boot, and PostgreSQL.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
