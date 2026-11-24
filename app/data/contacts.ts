@@ -14,7 +14,7 @@ export const contacts = [
   {
     name: 'GitHub',
     icon: { dark: GitHubDark, light: GitHubWhite },
-    url: 'https://github.com/pedrovieiraf'
+    url: 'https://github.com/pedro-vieiraf'
   },
   {
     name: 'Email',

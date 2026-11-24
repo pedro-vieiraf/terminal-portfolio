@@ -1,10 +1,8 @@
 export const homeLines = [
-  { prefix: 'system', text: 'pedro has joined the chat' },
-  { prefix: 'pedro', text: "hello, i'm Pedro, a backend developer" },
-  { prefix: 'pedro', text: "coffee-powered and code-fueled!"},
-  { prefix: 'pedro', text: "i build backend systems and work with APIs and AI integration" },
-  { prefix: 'pedro', text: "feel free to explore my projects and skills!" },
-  { prefix: 'pedro', text: "sometimes i talk to computers more than humans…" },
-  { prefix: 'pedro', text: "but i promise i'm approachable!" },
-  { prefix: 'pedro', text: "{\\__/}\n( •-•)\n/つ☕" },
+  { prefix: 'system', text: 'Pedro has joined the chat.' },
+  { prefix: 'pedro', text: "Hi, I'm Pedro Vieira. I'm focused on Java backend development." },
+  { prefix: 'pedro', text: 'I build REST APIs with Java, Spring Boot, and PostgreSQL.' },
+  { prefix: 'pedro', text: "Explore Finora and Appointment System in /projects to see what I've been building." },
+  { prefix: 'pedro', text: "If you'd like to talk about Java or backend development, say hello in /contact." },
+  { prefix: 'pedro', text: '{\\__/}\n( •-•)\n/つ☕' },
 ];

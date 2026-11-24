@@ -2,7 +2,6 @@ import TerminalLayout from "@/components/TerminalLayout";
 import TerminalLine from "@/components/TerminalLine";
 import { skillsLines } from "@/content/skills";
 import { mainSkills, otherSkills } from "../data/skills";
-import Image from "next/image";
 
 export default function SkillsPage() {
   return (
@@ -15,33 +14,19 @@ export default function SkillsPage() {
         />
       ))}
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-4 mt-4">
+      <ul className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-4">
         {mainSkills.map((skill) => (
-          <div
-            key={skill.name}
-            className="
-              flex flex-col justify-between items-center
-              p-2 w-32 h-32
-              bg-terminal
-              border border-strong
-              rounded-md
-            "
+          <li
+            key={skill}
+            className="rounded-md border border-strong bg-terminal p-3 text-center text-sm"
           >
-            <Image
-              src={skill.icon}
-              width={48}
-              height={48}
-              alt={skill.name}
-            />
-            <span className="mt-1 text-sm text-foreground">
-              {skill.name}
-            </span>
-          </div>
+            {skill}
+          </li>
         ))}
-      </div>
+      </ul>
 
       <div className="mt-6">
-        <span className="text-foreground">other skills:</span>
+        <span className="text-foreground">Additional skills</span>
 
         {Object.entries(otherSkills).map(([category, skills]) => (
           <div key={category} className="mb-4">
