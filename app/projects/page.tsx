@@ -22,7 +22,7 @@ export default function ProjectsPage() {
               href={proj.url}
               target={proj.url ? "_blank" : undefined}
               rel={proj.url ? "noopener noreferrer" : undefined}
-              className={`flex flex-col rounded-md border bg-terminal p-4 ${proj.url ? "hover:bg-(--muted)" : ""}`}
+              className={`flex flex-col rounded-md border bg-terminal p-4 ${proj.url ? "hover:bg-surface-hover focus-visible:bg-surface-hover" : ""}`}
               style={{
                 borderColor: "var(--fg)",
               }}
