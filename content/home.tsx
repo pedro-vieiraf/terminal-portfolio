@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { finoraRepository } from '@/app/data/projects';
 
 const linkClass = 'underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2';
 
@@ -11,7 +12,7 @@ export const homeLines = [
     text: (
       <>
         lately i&apos;ve been working on{' '}
-        <Link href="/projects/finora" className={linkClass}>Finora</Link>,
+        <a href={finoraRepository} className={linkClass}>Finora</a>,
         {' '}a personal finance app that syncs bank transactions through Pluggy
       </>
     ),

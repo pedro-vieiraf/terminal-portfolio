@@ -5,7 +5,7 @@ export const projects = [
     name: 'Finora',
     description: 'Personal finance app for tracking accounts, transactions, and credit card bills, with Open Finance synchronization through Pluggy.',
     technologies: ['Java 21', 'Spring Boot', 'PostgreSQL', 'Docker', 'Expo'],
-    url: '/projects/finora',
+    url: finoraRepository,
   },
   {
     name: 'Appointment System',
