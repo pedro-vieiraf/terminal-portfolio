@@ -1,9 +1,11 @@
+export const finoraRepository = 'https://github.com/pedro-vieiraf/finora';
+
 export const projects = [
   {
     name: 'Finora',
     description: 'Personal finance app for tracking accounts, transactions, and credit card bills, with Open Finance synchronization through Pluggy.',
     technologies: ['Java 21', 'Spring Boot', 'PostgreSQL', 'Docker', 'Expo'],
-    url: 'https://github.com/pedro-vieiraf/finora',
+    url: finoraRepository,
   },
   {
     name: 'Appointment System',

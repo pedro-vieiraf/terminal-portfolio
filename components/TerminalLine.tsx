@@ -1,11 +1,13 @@
+import type { ReactNode } from 'react';
+
 interface TerminalLineProps {
   prefix: string;
-  text: string;
+  text: ReactNode;
 }
 
 export default function TerminalLine({ prefix, text }: TerminalLineProps) {
   const isSystem = prefix === 'system';
-  const isMultiline = text.includes('\n');
+  const isMultiline = typeof text === 'string' && text.includes('\n');
 
   const textColor = isSystem ? 'text-secondary' : 'text-foreground';
 
