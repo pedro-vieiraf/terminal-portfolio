@@ -11,6 +11,7 @@ export const projects = [
     name: 'Appointment System',
     description: 'REST API for scheduling appointments and sending email reminders. It enforces status transitions from booking to completion or cancellation, with automated tests running in GitHub Actions.',
     technologies: ['Java 21', 'Spring Boot', 'Spring Security', 'PostgreSQL', 'Docker'],
+    url: 'https://github.com/pedro-vieiraf/appointment-system',
   },
   {
     name: 'BlogsAPI',
